@@ -4,6 +4,7 @@ from selenium.common.exceptions import WebDriverException
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
+import os
 import unittest
 
 
@@ -32,10 +33,10 @@ class NewVisitorTest(StaticLiveServerTestCase):
                     raise e
                 time.sleep(0.5)
 
-    def setUp(self):
+    # def setUp(self):
 
 
-        self.browser = webdriver.Firefox()
+    #     self.browser = webdriver.Firefox()
 
 
     def tearDown(self):
